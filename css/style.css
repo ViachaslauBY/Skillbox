@@ -167,7 +167,7 @@ body {
 }
 
 .hero__button:hover {
-  background-color: #4a37f5;
+  background-color: #6050f6;
 }
 
 .hero__background {
@@ -291,6 +291,105 @@ body {
   color: #85859b;
 }
 
+/* Courses */
+.courses {
+  padding-top: 74px;
+  padding-bottom: 80px;
+}
+
+.courses__title {
+  margin-bottom: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #212133;
+}
+
+.courses__card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.card__time {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  right: 20px;
+}
+
+.card__time-icon {
+  display: inline-block;
+  margin-right: 4px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/time.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__time-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--title-color);
+}
+
+.card__img {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 1px;
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card__info {
+  position: relative;
+  padding: 30px;
+  padding-bottom: 91px;
+  height: calc(100% - 180px);
+  background-color: #edf0f9;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #212133;
+}
+
+.card__text {
+  margin-bottom: 47px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #666666;
+}
+
+.card__button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 21px 59px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: var(--title-color);
+  background: var(--bg-color);
+  border-radius: 20px;
+}
+
+.card__button:hover {
+  background-color: #6050f6;
+}
+
 @media (max-width: 1200px) {
   .advantages__item {
     flex-direction: column;
@@ -348,6 +447,19 @@ body {
   .teachers__card {
     margin-bottom: 21px;
   }
+
+  /* Courses */
+  .card__time {
+    right: 25px;
+  }
+
+  .card__info {
+    padding-bottom: 70px;
+  }
+
+  .card__button {
+    padding: 20px 56px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -393,6 +505,19 @@ body {
   /* Teachers */
   .teachers {
     padding-bottom: 53px;
+  }
+
+  /* Courses */
+  .card__title {
+    line-height: 130%;
+  }
+
+  .card__info {
+    padding-bottom: 76px;
+  }
+
+  .card__button {
+    padding: 20px 49px;
   }
 }
 
@@ -489,5 +614,28 @@ body {
 
   .teachers__card {
     margin-bottom: 22px;
+  }
+
+  /* Courses */
+  .courses {
+    padding-top: 46px;
+    padding-bottom: 80px;
+  }
+
+  .courses__card {
+    margin-bottom: 29px;
+  }
+
+  .courses__title {
+    margin-bottom: 27px;
+    font-size: 20px;
+  }
+
+  .card__info {
+    min-height: 473px;
+  }
+
+  .card__button {
+    padding: 21px 56px;
   }
 }
