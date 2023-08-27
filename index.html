@@ -7,60 +7,66 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
   <title>Курсы 3D моделирования</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__container row">
-        <a class="header__logo col-md-2" href="#">
+      <div class="header__wrapper row">
+        <a class="header__logo" href="#">
           <picture>
             <source srcset="img/header-logo-520.svg" media="(max-width: 520px)">
-            <img class="header__logo-img" src="img/header-logo.svg" alt="Логотип Skillbox">
+            <img class="logo__img" src="img/header-logo.svg" alt="Логотип Skillbox" >
           </picture>
         </a>
-        <nav class="header__nav col-md-10">
-          <ul class="nav__list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Преподаватели</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Курсы</a>
-            </li>
-          </ul>
-          <button class="header__burger button-reset" aria-label="Бургер меню">
+        <div class="header__nav">
+          <button class="button-reset header__burger" type="button" aria-label="Burger menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
             <span class="burger__line"></span>
           </button>
-        </nav>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#hero">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#teachers">Преподаватели</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#courses">Курсы</a>
+              </li>
+            </ul>            
+          </nav>          
+        </div>        
       </div>
     </div>
   </header>
+
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container">
-        <div class="hero__container row">
+        <div class="hero__wrapper row">
           <div class="hero__info col-md-6 col-lg-5">
             <h1 class="hero__title">Курсы 3D моделирования</h1>
             <p class="hero__description">
               Следует отметить, что существующая теория способствует повышению качества
               благоприятных перспектив. Не следует, однако, забывать.
             </p>
-            <button class="hero__button button-reset">Выбрать курс</button>
+            <button class="button-reset hero__button">Выбрать курс</button>
           </div>
           <div class="hero__background col-md-6 col-lg-7"></div>
         </div>
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
-        <div class="advantages__info row">
+        <div class="advantages__wrapper row">
           <div class="advantages__background col-sm-4 col-md-4 col-lg-2"></div>
           <div class="advantages__info col-sm-8 col-md-8 col-lg-10">
             <h2 class="advantages__title">Преимущества обучения в skillbox</h2>
@@ -71,28 +77,28 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="advantages__item col-12 col-sm-4">
+        <ul class="advantages__list row">
+          <li class="advantages__item col-12 col-sm-4">
             <div class="advantages__icon icon-result"></div>
             <span class="advantages__text">Результат вашего обучения является самым важным для нас приоритетом</span>
-          </div>
-          <div class="advantages__item col-12 col-sm-4">
+          </li>
+          <li class="advantages__item col-12 col-sm-4">
             <div class="advantages__icon icon-acquaintance"></div>
             <span class="advantages__text">Лично познакомитесь с одним из своих будущих преподавателей</span>
-          </div>
-          <div class="advantages__item col-12 col-sm-4">
+          </li>
+          <li class="advantages__item col-12 col-sm-4">
             <div class="advantages__icon icon-significance"></div>
             <span class="advantages__text">Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным</span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="teachers">
+    <section class="teachers" id="teachers">
       <div class="container">
         <h2 class="teachers__title">Преподаватели курсов</h2>
-        <div class="row">
-          <div class="teachers__card col-12 col-sm-6 col-lg-3">
+        <ul class="teachers__list row">
+          <li class="teachers__item col-12 col-sm-6 col-lg-3">
             <picture>
               <source class="teachers__photo" srcset="img/teachers-photo-1-320.jpg" media="(max-width: 575px)">
               <source class="teachers__photo" srcset="img/teachers-photo-1-576.jpg" media="(max-width: 767px)">
@@ -103,8 +109,8 @@
             <span class="teachers__text">
               Лишь непосредственные участники технического прогресса неоднозначны и будут в равной степени предоставлены сами себе.
             </span>
-          </div>
-          <div class="teachers__card col-12 col-sm-6 col-lg-3">
+          </li>
+          <li class="teachers__item col-12 col-sm-6 col-lg-3">
             <picture>
               <source class="teachers__photo" srcset="img/teachers-photo-2-320.jpg" media="(max-width: 575px)">
               <source class="teachers__photo" srcset="img/teachers-photo-2-576.jpg" media="(max-width: 767px)">
@@ -115,8 +121,8 @@
             <span class="teachers__text">
               Безусловно, разбавленное изрядной долей эмпатии, рациональное мышление.
             </span>
-          </div>
-          <div class="teachers__card col-12 col-sm-6 col-lg-3">
+          </li>
+          <li class="teachers__item col-12 col-sm-6 col-lg-3">
             <picture>
               <source class="teachers__photo" srcset="img/teachers-photo-3-320.jpg" media="(max-width: 575px)">
               <source class="teachers__photo" srcset="img/teachers-photo-3-576.jpg" media="(max-width: 767px)">
@@ -127,8 +133,8 @@
             <span class="teachers__text">
               Ясность нашей позиции очевидна: высокое качество позиционных исследований напрямую зависит от вывода.
             </span>
-          </div>
-          <div class="teachers__card col-12 col-sm-6 col-lg-3">
+          </li>
+          <li class="teachers__item col-12 col-sm-6 col-lg-3">
             <picture>
               <source class="teachers__photo" srcset="img/teachers-photo-4-320.jpg" media="(max-width: 575px)">
               <source class="teachers__photo" srcset="img/teachers-photo-4-576.jpg" media="(max-width: 767px)">
@@ -139,25 +145,25 @@
             <span class="teachers__text">
               Мы вынуждены отталкиваться от того, что существующая теория, в своём классическом представлении.
             </span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="courses">
+    <section class="courses" id="courses">
       <div class="container">
         <h2 class="courses__title">Курсы</h2>
-        <div class="row">
-          <div class="courses__card card col-12 col-sm-6 ">
-            <div class="card__time">
-              <span class="card__time-icon"></span>
-              <span class="card__time-text">60 часов</span>
+        <ul class="courses__list row">
+          <li class="courses__item card col-12 col-sm-6 ">
+            <div class="courses__time">
+              <span class="time__icon"></span>
+              <span class="time__text">60 часов</span>
             </div>
             <picture>
-              <source class="card__img" srcset="img/cinema-320.png" media="(max-width: 575px)">
-              <source class="card__img" srcset="img/cinema-576.png" media="(max-width: 767px)">
-              <source class="card__img" srcset="img/cinema-768.png" media="(max-width: 992px)">
-              <img class="card__img" src="img/cinema.png" alt="Cinema 4d для начинающих">
+              <source class="courses__img" srcset="img/cinema-320.png" media="(max-width: 575px)">
+              <source class="courses__img" srcset="img/cinema-576.png" media="(max-width: 767px)">
+              <source class="courses__img" srcset="img/cinema-768.png" media="(max-width: 992px)">
+              <img class="courses__img" src="img/cinema.png" alt="Cinema 4d для начинающих">
             </picture>
             <div class="card__info">
               <h5 class="card__title">Cinema 4d для начинающих</h5>
@@ -165,19 +171,19 @@
                 Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от системы массового участия. Следует
                 отметить, что сложившаяся структура организации напрямую зависит от стандартных подходов.
               </p>
-              <button class="button-reset card__button" aria-label="Подробнее о Cinema 4d">Подробнее</button>
+              <button class="button-reset courses__button" aria-label="Подробнее о Cinema 4d">Подробнее</button>
             </div>
-          </div>
-          <div class="courses__card card col-12 col-sm-6 ">
-            <div class="card__time">
-              <span class="card__time-icon"></span>
-              <span class="card__time-text">40 часов</span>
+          </li>
+          <li class="courses__item card col-12 col-sm-6 ">
+            <div class="courses__time">
+              <span class="time__icon"></span>
+              <span class="time__text">40 часов</span>
             </div>
             <picture>
-              <source class="card__img" srcset="img/blender-320.png" media="(max-width: 575px)">
-              <source class="card__img" srcset="img/blender-576.png" media="(max-width: 767px)">
-              <source class="card__img" srcset="img/blender-768.png" media="(max-width: 992px)">
-              <img class="card__img" src="img/blender.png" alt="Blender: продвинутый уровень">
+              <source class="courses__img" srcset="img/blender-320.png" media="(max-width: 575px)">
+              <source class="courses__img" srcset="img/blender-576.png" media="(max-width: 767px)">
+              <source class="courses__img" srcset="img/blender-768.png" media="(max-width: 992px)">
+              <img class="courses__img" src="img/blender.png" alt="Blender: продвинутый уровень">
             </picture>
             <div class="card__info">
               <h5 class="card__title">Blender: продвинутый уровень</h5>
@@ -185,38 +191,38 @@
                 Но убеждённость некоторых оппонентов в значительной степени обусловливает важность форм воздействия. Внезапно,
                 тщательные исследования конкурентов представлены.
               </p>
-              <button class="button-reset card__button" aria-label="Подробнее о Blender">Подробнее</button>
+              <button class="button-reset courses__button" aria-label="Подробнее о Blender">Подробнее</button>
             </div>
-          </div>
-          <div class="courses__card card col-12 col-sm-6 ">
-            <div class="card__time">
-              <span class="card__time-icon"></span>
-              <span class="card__time-text">40 часов</span>
+          </li>
+          <li class="courses__item card col-12 col-sm-6 ">
+            <div class="courses__time">
+              <span class="time__icon"></span>
+              <span class="time__text">40 часов</span>
             </div>
             <picture>
-              <source class="card__img" srcset="img/3ds-max-320.png" media="(max-width: 575px)">
-              <source class="card__img" srcset="img/3ds-max-576.png" media="(max-width: 767px)">
-              <source class="card__img" srcset="img/3ds-max-768.png" media="(max-width: 992px)">
-              <img class="card__img" src="img/3ds-max.png" alt="Визуализация в 3ds Max">
+              <source class="courses__img" srcset="img/3ds-max-320.png" media="(max-width: 575px)">
+              <source class="courses__img" srcset="img/3ds-max-576.png" media="(max-width: 767px)">
+              <source class="courses__img" srcset="img/3ds-max-768.png" media="(max-width: 992px)">
+              <img class="courses__img" src="img/3ds-max.png" alt="Визуализация в 3ds Max">
             </picture>
             <div class="card__info">
               <h5 class="card__title">Визуализация в 3ds Max</h5>
               <p class="card__text">
                 Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность кластеризации усилий.
               </p>
-              <button class="button-reset card__button" aria-label="Подробнее о 3ds Max">Подробнее</button>
+              <button class="button-reset courses__button" aria-label="Подробнее о 3ds Max">Подробнее</button>
             </div>
-          </div>
-          <div class="courses__card card col-12 col-sm-6 ">
-            <div class="card__time">
-              <span class="card__time-icon"></span>
-              <span class="card__time-text">80 часов</span>
+          </li>
+          <li class="courses__item card col-12 col-sm-6 ">
+            <div class="courses__time">
+              <span class="time__icon"></span>
+              <span class="time__text">80 часов</span>
             </div>
             <picture>
-              <source class="card__img" srcset="img/zbrush-320.png" media="(max-width: 575px)">
-              <source class="card__img" srcset="img/zbrush-576.png" media="(max-width: 767px)">
-              <source class="card__img" srcset="img/zbrush-768.png" media="(max-width: 992px)">
-              <img class="card__img" src="img/zbrush.png" alt="Скульптинг в ZBrush">
+              <source class="courses__img" srcset="img/zbrush-320.png" media="(max-width: 575px)">
+              <source class="courses__img" srcset="img/zbrush-576.png" media="(max-width: 767px)">
+              <source class="courses__img" srcset="img/zbrush-768.png" media="(max-width: 992px)">
+              <img class="courses__img" src="img/zbrush.png" alt="Скульптинг в ZBrush">
             </picture>
             <div class="card__info">
               <h5 class="card__title">Скульптинг в ZBrush</h5>
@@ -224,15 +230,15 @@
                 Разнообразный и богатый опыт говорит нам, что граница обучения кадров требует определения и уточнения прогресса
                 профессионального сообщества! В частности, постоянный количественный рост и сфера нашей активности.
               </p>
-              <button class="button-reset card__button" aria-label="Подробнее о ZBrush">Подробнее</button>
+              <button class="button-reset courses__button" aria-label="Подробнее о ZBrush">Подробнее</button>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
-  <footer class="footer">
 
+  <footer class="footer">
       <ul class="footer-social__list">
         <li class="footer-social__item">
           <a class="footer__social__link" href="#" title="Facebook">
@@ -264,7 +270,7 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        SKILLBOX <span class="footer__copyright-icon">®</span>2021
+        SKILLBOX <span class="copyright__icon">®</span>2021
       </div>
   </footer>
 </body>
