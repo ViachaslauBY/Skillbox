@@ -476,7 +476,6 @@ body.lock {
 }
 
 @media (max-width: 992px) {
-  /* Hero */
   .hero__info {
     padding-top: 130px;
     padding-bottom: 134px;
@@ -497,7 +496,6 @@ body.lock {
     background-repeat: no-repeat;
   }
 
-  /* Advantages */
   .advantages {
     padding-bottom: 75px;
   }
@@ -508,7 +506,6 @@ body.lock {
     background-image: url('../img/advantages-img-992.png');
   }
 
-  /* Teachers */
   .teachers {
     padding-bottom: 29px;
   }
@@ -517,7 +514,6 @@ body.lock {
     margin-bottom: 21px;
   }
 
-  /* Courses */
   .courses__time {
     right: 25px;
   }
@@ -536,7 +532,6 @@ body.lock {
 }
 
 @media (max-width: 767px) {
-  /* Header */
   .header__logo {
     text-align: center;
     margin-bottom: 25px;
@@ -550,7 +545,7 @@ body.lock {
   .nav__list {
     justify-content: center;
   }
-  /* Hero */
+
   .hero__info {
     padding-top: 77px;
     padding-bottom: 135px;
@@ -569,7 +564,6 @@ body.lock {
     display: none;
   }
 
-  /* Advantages */
   .advantages {
     padding-bottom: 54px;
   }
@@ -580,12 +574,10 @@ body.lock {
     background-image: url('../img/advantages-img-767.png');
   }
 
-  /* Teachers */
   .teachers {
     padding-bottom: 53px;
   }
 
-  /* Courses */
   .card__title {
     line-height: 130%;
   }
@@ -600,7 +592,6 @@ body.lock {
 }
 
 @media (max-width: 575px) {
-  /* Header */
   .header__logo {
     margin-bottom: 0;
   }
@@ -614,7 +605,6 @@ body.lock {
   .header__nav {
     display: flex;
     justify-content: flex-end;
-    /* width: 50%; */
   }
 
   .nav {
@@ -660,7 +650,6 @@ body.lock {
     display: block;
   }
 
-  /* Hero */
   .hero__info {
     padding-top: 49px;
     padding-bottom: 50px;
@@ -687,7 +676,6 @@ body.lock {
     background-color: var(--bg-color);
   }
 
-  /* Advantages */
   .advantages {
     padding-top: 50px;
     padding-bottom: 19px;
@@ -736,7 +724,6 @@ body.lock {
     margin-bottom: 22px;
   }
 
-  /* Courses */
   .courses {
     padding-top: 46px;
     padding-bottom: 18px;
@@ -749,10 +736,6 @@ body.lock {
   .courses__title {
     margin-bottom: 27px;
     font-size: 20px;
-  }
-
-  .card__info {
-    min-height: 473px;
   }
 
   .courses__button {
